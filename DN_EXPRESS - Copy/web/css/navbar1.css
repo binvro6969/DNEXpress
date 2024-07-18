@@ -1,0 +1,231 @@
+
+.navbar{
+    transition: all 0.5s;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: transparent;
+    position: fixed;
+    height: 68px;
+  }
+  .navbar span{
+    font-weight: 700;
+  }
+  .navbar-normal{
+    background-color: rgba(255, 255, 255, -0.5); /* Màu nền với độ trong suốt */
+    backdrop-filter: blur(5px); /* Điều chỉnh độ mờ */
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .navbar-scrolled{
+    background-color:white ;
+    box-shadow:0.1rem 0.1rem 0.1rem gray;
+  }
+  
+  
+
+  .offcanvas-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  a {
+    color: var(--body-text-color);
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    color: var(--blue);
+    text-decoration: none;
+  }
+  a span:hover{
+    color: #3ac5ce;
+  }
+  
+  .btn.btn-primary {
+    border-radius: 30px;
+    --bs-btn-color: white;
+    --bs-btn-bg: #083c3e;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #3ac5ce;
+    border: none;
+  }
+  
+  .brand {
+      font-size: 24px;
+      font-weight: 700;
+      height: 56px;
+      display: flex;
+      align-items: center; 
+  }
+  .brand-normal{
+    color: #083c3e;
+  } 
+  .brand-normal:hover{
+      color: #3ac5ce;
+  } 
+  
+  .brand-scrolled{
+      color: #3ac5ce;
+  }
+  
+  .brand .bx {
+      min-width: 60px;
+      display: flex;
+      justify-content: center;
+      color: #3ac5ce;
+    
+  }
+
+  .brand span{
+    color:#3ac5ce;
+  }
+  
+  @media only screen and (max-width: 768px) {
+  
+    h1,
+    .h1 {
+      font-size: 50px;
+    }
+  }
+  
+  /* navigation bar  */
+  
+  .nav-list{
+    margin: 10px;
+    color: #083c3e;
+  }
+  
+  div#navigation-bar {
+    width: 100%;
+    top: 0;
+    left: 0px;
+    z-index: 1000;
+    background-color: transparent;
+    position: fixed;
+    height: 100px;
+  }
+  
+  .nav-link {
+    color: var(--body-text-color);
+    text-decoration: none;
+  }
+  
+  a.nav-link.active,
+  .anav-link:focus,
+  a.nav-link:hover {
+    color: var(--body-text-color);
+  }
+  
+  a.nav-link::after {
+    content: "";
+    text-align: center;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--blue);
+    transition: width 0.3s;
+  }
+  
+  a.nav-link:focus::after,
+  a.nav-link:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+  }
+  
+  .log_sign{
+    display: flex;
+  }
+
+  .log_sign .btn_login {
+    padding-left: 10px;
+  }
+
+  .log_sign .btn_signin{
+    border-radius: 20px;
+    padding-right: 10px;
+    background-color: #083c3e;
+    background-color: #083c3e;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+  }
+
+  .log_sign .btn_signin:hover {
+    background-color: #3ac5ce;
+    color: #083c3e;
+  }
+
+  .log_sign .btn_signin span{
+    color: white;
+    padding: 10px;
+  }
+
+  .log_sign .btn_signin:hover span {
+    color: #083c3e;
+  }
+
+  .log_sign .btn_signin ::after {
+    content: none; 
+  }
+  /* dropdown  */
+  .dropdown-toggle::after {
+    border: none;
+    margin-left: 0em;
+    vertical-align: 0em;
+  }
+  
+  .dropdown-item.active,
+  .dropdown-item:active {
+    color: var(--body-text-color);
+    text-decoration: none;
+    background-color: var(--grey-color);
+  }
+  
+  /* modal  */
+  .modal-header {
+    border-bottom: none;
+  }
+  
+  
+  
+  .modal-backdrop {
+    --bs-backdrop-zindex: 999;
+    --bs-backdrop-bg: #000;
+    --bs-backdrop-opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--bs-backdrop-zindex);
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bs-backdrop-bg);
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .nav {
+      display: grid;
+    }
+  
+    /* .account {
+      justify-content: center !important;
+      margin: 70px 0px;
+    } */
+  }
+  
+  @media only screen and (max-width: 1460px) and (min-width: 990px) {
+    a.login {
+      display: none;
+    }
+  
+    button.signup {
+      display: none;
+    }
+  
+    
+  }
